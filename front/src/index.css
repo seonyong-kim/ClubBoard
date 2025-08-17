@@ -1,0 +1,27 @@
+/* 전역 리셋: 브라우저 기본 여백 제거 + 박스사이징 */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Arial,
+    Apple Color Emoji, Segoe UI Emoji;
+}
+
+/* Vite 기본 템플릿에서 공백의 원인이던 부분 제거 */
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
